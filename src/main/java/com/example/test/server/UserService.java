@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 
 @Service
 @Transactional
+//@RequiredArgsConstructor可以用這個寫就不須需要public UserService這麻煩東西或是拿掉UserRepository final寫@Autowired
 public class UserService {
 
     private final UserRepository userRepository;
