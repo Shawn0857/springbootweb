@@ -1,0 +1,15 @@
+#  請在網頁url貼上 http://localhost:8080/h2-console
+#  在框框JDBC URL加上: jdbc:h2:mem:librarydb  資料庫名稱就可以進入
+#  進入後run下面增加資料就可以查書籍之類
+#  因為使用者登入初始化資料沒有東西，所以先註冊再去登入
+
+
+INSERT INTO book (isbn, name, author, introduction) VALUES
+('9789864791928', 'Spring 實戰', 'Craig Walls', '一本深入介紹 Spring 框架的實用書籍'),
+('9789863122326', 'Java 程式設計入門', 'Herbert Schildt', '適合初學者的 Java 教學書'),
+('9789865021610', 'Clean Code', 'Robert C. Martin', '撰寫可讀性高且易維護程式碼的原則');
+
+INSERT INTO inventory (isbn, status) VALUES
+('9789864791928', 'AVAILABLE'),
+('9789863122326', 'AVAILABLE'),
+('9789865021610', 'AVAILABLE');
