@@ -72,6 +72,13 @@
             <artifactId>spring-web</artifactId>
             <version>5.3.31</version>
         </dependency>
+
+<!--   改用這種資料庫     -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
+        </dependency>
     </dependencies>
 
     <build>
